@@ -15,8 +15,7 @@
   "status",
   "publisher",
   "image_tab",
-  "submit",
-  "tab_3_tab"
+  "submit"
  ],
  "fields": [
   {
@@ -74,17 +73,12 @@
    "fieldname": "submit",
    "fieldtype": "Button",
    "label": "submit"
-  },
-  {
-   "fieldname": "tab_3_tab",
-   "fieldtype": "Tab Break",
-   "label": "Tab 3"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-10-07 15:51:57.554337",
+ "modified": "2026-10-07 17:42:23.257288",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -101,6 +95,27 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Library Member",
+   "share": 1
   }
  ],
  "row_format": "Dynamic",
