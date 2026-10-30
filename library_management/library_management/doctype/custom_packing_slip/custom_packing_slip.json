@@ -1,0 +1,189 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-09 11:27:07.900267",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sec",
+  "custom_delivery_note",
+  "column_break_wzcy",
+  "custom_series",
+  "section_break_supq",
+  "column_break_fhuu",
+  "custom_from_package_no",
+  "column_break_nerk",
+  "custom_to_package_no",
+  "section_break_imuu",
+  "custom_items",
+  "custom_package_weight_details_section",
+  "customnet_weight_pkg",
+  "net_weight_uom",
+  "column_break_aebw",
+  "custom_gross_weight_pkg",
+  "custom_gross_weight_uom",
+  "custom_letter_head_section",
+  "custom_letter_head",
+  "section_break_djkp",
+  "custom_amended_from"
+ ],
+ "fields": [
+  {
+   "description": "Indicates that the package is a part of this delivery (Only Draft)",
+   "fieldname": "custom_delivery_note",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Custom Delivery Note",
+   "options": "Delivery Note",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_series",
+   "fieldtype": "Select",
+   "label": "Custom series",
+   "options": "MAT-PAC-.YYYY.-",
+   "print_hide": 1,
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "sec",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_wzcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_supq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "description": "Identification of the package for the delivery (for print)",
+   "fieldname": "custom_from_package_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Custom From Package No.",
+   "no_copy": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_nerk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "If more than one package of the same type (for print)",
+   "fieldname": "custom_to_package_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Custom To Package No.",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "column_break_fhuu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_imuu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_items",
+   "fieldtype": "Table",
+   "label": "Custom Items",
+   "options": "Custom Packing Slip Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "custom_package_weight_details_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Package Weight Details"
+  },
+  {
+   "description": "The net weight of this package. (calculated automatically as sum of net weight of items)",
+   "fieldname": "customnet_weight_pkg",
+   "fieldtype": "Float",
+   "label": "Custom Net Weight",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_weight_uom",
+   "fieldtype": "Link",
+   "label": "Custom Net Weight UOM",
+   "no_copy": 1,
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_aebw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "The gross weight of the package. Usually net weight + packaging material weight. (for print)",
+   "fieldname": "custom_gross_weight_pkg",
+   "fieldtype": "Float",
+   "label": "Custom Gross Weight",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "custom_gross_weight_uom",
+   "fieldtype": "Link",
+   "label": "Gross Weight UOM",
+   "no_copy": 1,
+   "options": "UOM"
+  },
+  {
+   "fieldname": "custom_letter_head_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Letter Head"
+  },
+  {
+   "fieldname": "section_break_djkp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "custom_amended_from",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Custom Amended From",
+   "no_copy": 1,
+   "options": "Custom Packing Slip",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_letter_head",
+   "fieldtype": "Data",
+   "label": "Custom Letter Head"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-09 15:01:34.463392",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Custom Packing Slip",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

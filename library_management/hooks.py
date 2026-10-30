@@ -154,23 +154,30 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"library_management.tasks.all"
-# 	],
-# 	"daily": [
-# 		"library_management.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"library_management.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"library_management.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"library_management.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+    "all": [
+        "library_management.tasks.all"
+    ],
+    #"cron": {
+    #    "* * * * *": [
+    #        "library_management.tasks.cron"
+    #    ],
+   # }
+}
+ 
+ #	"daily": [
+ #		"library_management.tasks.daily"
+ #	],
+ #	"hourly": [
+ #		"library_management.tasks.hourly"
+ #	],
+ #	"weekly": [
+ #		"library_management.tasks.weekly"
+ #	],
+ #	"monthly": [
+ #		"library_management.tasks.monthly"
+ #	],
+ 
 
 # Testing
 # -------
@@ -253,3 +260,9 @@ app_license = "mit"
 # List of apps whose translatable strings should be excluded from this app's translations.
 # ignore_translatable_strings_from = []
 
+
+Fixtures = {
+    
+        "doctype":"Notes"
+    
+}

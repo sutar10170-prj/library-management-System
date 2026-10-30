@@ -1,0 +1,146 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-09 13:56:23.971706",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_item_code",
+  "column_break_zjjy",
+  "custom_item_name",
+  "custom_batch_no",
+  "custom_description_section",
+  "custom_description",
+  "custom_quantity_section",
+  "custom_qty",
+  "custom_net_weight",
+  "column_break_rfrg",
+  "custom_stock_uom",
+  "custom_weight_uom",
+  "custom_",
+  "custom_dn_detail",
+  "custom_delivery_note_packed_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "custom_item_code",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Custom Item Code",
+   "options": "Item",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "column_break_zjjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "custom_item_code.item_name",
+   "fieldname": "custom_item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Custom Item Name",
+   "print_width": "200px",
+   "read_only": 1,
+   "width": "200px"
+  },
+  {
+   "fieldname": "custom_batch_no",
+   "fieldtype": "Link",
+   "label": "Batch No",
+   "options": "Batch"
+  },
+  {
+   "fieldname": "custom_description_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Description"
+  },
+  {
+   "fieldname": "custom_description",
+   "fieldtype": "Text Editor",
+   "label": "Custom Description"
+  },
+  {
+   "fieldname": "custom_quantity_section",
+   "fieldtype": "Section Break",
+   "label": "Custom Quantity"
+  },
+  {
+   "fieldname": "custom_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Custom Quantity",
+   "print_width": "100px",
+   "reqd": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "custom_net_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Custom Net Weight",
+   "print_width": "100px",
+   "width": "100px"
+  },
+  {
+   "fieldname": "column_break_rfrg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_stock_uom",
+   "fieldtype": "Link",
+   "label": "Custom UOM",
+   "options": "UOM",
+   "print_width": "100px",
+   "read_only": 1,
+   "width": "100px"
+  },
+  {
+   "fieldname": "custom_weight_uom",
+   "fieldtype": "Link",
+   "label": "Custom Weight UOM",
+   "options": "Custom UOM"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "0",
+   "fieldname": "custom_",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Page Break"
+  },
+  {
+   "fieldname": "custom_dn_detail",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Custom Delivery Note Item",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "custom_delivery_note_packed_item",
+   "fieldtype": "Data",
+   "label": "Custom Delivery Note Packed Item"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-10 11:10:41.945319",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Custom Packing Slip Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

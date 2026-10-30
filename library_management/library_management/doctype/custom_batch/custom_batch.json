@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-10-09 14:43:38.559494",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "custom_disabled",
+  "column_break_vdvf",
+  "use_batchwise_valuation",
+  "disabled"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "custom_disabled",
+   "fieldtype": "Check",
+   "label": "Custom Disabled"
+  },
+  {
+   "fieldname": "column_break_vdvf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "use_batchwise_valuation",
+   "fieldtype": "Check",
+   "label": "Use Batch-wise Valuation",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "default": "0",
+   "description": "If enabled, the system will allow negative stock entries for this batch, overriding the 'Allow negative stock for Batch' setting in Stock Settings. This may lead to incorrect valuation rates, so it is recommended to avoid using this option.",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-09 14:46:08.336724",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Custom Batch",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
